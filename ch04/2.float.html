@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>float</title>
+        <style>
+            div {
+                padding: 1rem;
+                margin: 1rem;
+                border: .1rem solid;
+                /* width, height 따로설정하지 않으면,
+                기본값 ▼ 
+                box-sizing = content-box
+                width: '창의 크기'에따라 변함
+                height: content를 둘러싸는 크기로 설정됨*/
+                
+                float: left;
+                /* float 사용시 content를 둘러싸는 만큼의 
+                width * height 크기로 설정됨 */
+            }
+
+            .one {
+                background: red;
+            }
+
+            .two {
+                background: orange;
+            }
+
+            .three {
+                background: yellow;
+                clear: left;
+                /* float 초기화 */
+                
+            }
+
+            .four {
+                background: green;
+                clear: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='one'>one</div>
+        <div class='two'>two</div>
+        <div class='three'>three</div>
+        <div class='four'>four</div>
+    </body>
+</html>

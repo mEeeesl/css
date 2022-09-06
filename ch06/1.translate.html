@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>translate</title>
+        <style>
+            div.container {
+                background: lightcoral;
+                position: relative;
+                width: 3rem;
+                padding: 3rem;
+                margin: 1rem;
+            }
+
+            div.box {
+                background: lightgreen;
+                padding: 2rem;
+                position: absolute; /* 부모 position이 relative 여야함 */
+                left: 0;
+                top: 0;
+            }
+
+            div.box:active { /* ◀▼ 클릭시 위치이동 (left, top) */
+                transform: translate(3rem, 1rem);
+            }
+
+            div.three { /* 3차원 - z축 지정 */
+                perspective: 10rem;
+            }
+            
+            div.three div:active {
+                transform: translate3d(3rem, 1rem, 5rem);
+            }
+        </style>
+    </head>
+    <body>
+        <div class='container'>
+            <div class='box'></div>
+        </div>
+        <div class='container three'>
+            <div class='box'></div>
+        </div>
+    </body>
+</html>
+
+<!--           1.         2.     3.
+    ● transform: translate, scale, rotate
+    1. translate = 위치이동
+    2. scale = 크기증가
+    3. rotate = 돌려버리기
+
+    ※perspective = 3차원 - z축 지정하기위한 셋팅작업
+-->

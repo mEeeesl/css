@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>background-repeat</title>
+        <style>
+            div {
+                width: 9rem;
+                height: 9rem;
+                border: .1rem solid;
+                background-image: url('../res/leaf.jpg'); /* leaf.jpj 넣기 */
+            }
+
+            #one { /* x축 repeat */
+                background-repeat: repeat-x;
+            }
+
+            #two { /* y축 repeat */
+                background-repeat: repeat-y;
+            }
+
+            #three {
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div id='one'></div>
+        <div id='two'></div>
+        <div id='three'></div>
+    </body>
+</html>

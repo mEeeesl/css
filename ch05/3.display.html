@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>display</title>
+        <style>
+            ul.inline li {
+                display: inline; 
+                /* inline = 가로배치 
+                   기본값 = list-item */
+                width: 5rem; /*display: block에서만*/
+                height: 3rem; /*크기조절가능*/
+                background: lightcoral;
+            }
+
+            ul.block li {
+                display: inline-block;
+            }
+
+            ul.none li {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+        </ul>
+        <ul class='inline'>
+            <li>사과</li>
+            <li>딸기</li>
+        </ul>
+        <ul class='inline block'>
+            <li>사과</li>
+            <li>딸기</li>
+        </ul>
+        <ul class='none'>
+            <li>사과</li>
+            <li>딸기</li>
+        </ul>
+    </body>
+</html>

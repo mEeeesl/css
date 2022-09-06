@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>absolute</title>
+        <style>
+            div {
+                padding: 3rem;
+            }
+
+            #container {
+                position: relative; /* container는 position: static이 아니어야 한다. */
+                padding: 10rem;
+                border: .1rem solid;
+            }
+
+            .one {
+                background: lightcoral;
+                position: absolute; /* 부모 객체(#container)의 위치가 원점이다. */
+            }
+
+            .two {
+                background: grey;
+                position: content; /* 기본값 */
+                width: 6rem;
+                left: 0rem;
+                top: 0rem;
+            }
+
+            .three {
+                background: lightseagreen;
+                position: absolute; /* 부모 객체(#container)의 위치가 원점이다. */
+                left: 0rem;
+                top: 0rem;
+            }
+
+            .four {
+                background: lightgrey;
+                position: absolute; /* 부모 객체(#container)의 위치가 원점이다. */
+                left: 3.5rem;
+                top: 3.5rem;
+            }
+
+            .five {
+                background: lightgreen;
+                position: absolute; /* 원점이 .one 이랑 같아서 둘이 겹침. */
+                left: 7rem;
+                top: 7rem;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <div id='container'><!-- ◀ 부모 객체, 자식의 객체는 이 객체의 위치를 원점으로 삼는다. -->
+            <div class='one'></div><!--◀자식의 객체는 부모의 객체를 원점으로 잡는다.-->
+            <div class='two'></div>
+            <div class='three'></div>
+            <div class='four'></div>
+            <div class='five'></div>
+        </div>
+    </body>
+</html>

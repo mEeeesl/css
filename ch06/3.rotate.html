@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>rotate</title>
+        <style>
+            .container {
+                background: lightgreen;
+                width: 10rem;
+                height: 10rem;
+                padding: 2rem;
+                margin: 1rem;
+                position: relative;
+                float: left;
+            }
+
+            .box {
+                background: lightgoldenrodyellow;
+                padding: 2rem;
+                position: absolute;
+                left: 35%;
+                top: 33%;
+            }
+
+            .box:hover { /* hover = 커서를 가져다 대면, */
+                transform: rotate(20deg); 
+                /* rotate 돌려버리기(20도) */
+            }
+
+            .box:active {
+                transform: rotate(-20deg);
+            }
+            
+            .three {
+                perspective: 10rem;
+            }
+
+            .three .box:hover {
+                transform:rotateX(45deg);
+            }
+
+            .three .box:active {
+                transform: rotateY(45deg);
+            }
+        </style>
+    </head>
+    <body>
+       <div class='container'>
+            <div class='box'></div>
+       </div>
+       <div class='container three'>
+            <div class='box'></div>
+       </div>
+    </body>
+</html>
+
+<!--           1.         2.     3.
+    ● transform: translate, scale, rotate
+    1. translate = 위치이동
+    2. scale = 크기증가
+    3. rotate = 돌려버리기
+
+    ※perspective = 3차원 - z축 지정하기위한 셋팅작업
+-->

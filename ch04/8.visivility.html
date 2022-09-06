@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>visibility</title>
+        <style>
+            div {
+                padding: 3rem;
+                margin: 1rem;
+                float: left;
+            }
+
+            .one {
+                background-color: lightgreen;
+            }
+
+            .two {
+                background-color: lightpink;
+                visibility: hidden; 
+                /* 공간은 차지한 채, 숨기 */
+            }
+
+            .three {
+                background: lightslategray;
+            }
+
+            .one2 {
+                background-color: lightgreen;
+            }
+
+            .two2 {
+                background-color: lightpink;
+                display: none; 
+                /* 공간조차 숨겨버리기 */
+            }
+
+            .three2 {
+                background: lightslategray;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='one'></div>
+        <div class='two'></div>
+        <div class='three'></div>
+
+        <div class='one2'></div>
+        <div class='two2'></div>
+        <div class='three2'></div>
+    </body>
+</html>
+
+<!--
+    등급별로 가능한 기능? 같은거 구현할 때 사용가능
+
+    visibility: hidden; 
+    공간은 차지한 채, 숨기
+
+    display: none; 
+    공간조차 숨겨버리기
+
+-->

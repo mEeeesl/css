@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>position: relative</title>
+        <style>
+            div {
+                padding: 3rem;
+                float: left;
+                position: relative;
+            }
+
+            .one {
+                background: lightsalmon;
+                position: static;
+                left: 2rem;
+                top: 1rem;
+                /* position: static = 위치고정 */
+                /* float 으로 이동은 가능 */
+                
+            }
+
+            .two {
+                background: lightgreen;
+                position: relative; /* relative - 상대적 */
+                left: 2rem;
+                top: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='one'></div>
+        <div class='two'></div>
+
+    </body>
+</html>

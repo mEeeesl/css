@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>scale</title>
+        <style>
+            .container {
+                background: lightgreen;
+                width: 10rem;
+                height: 10rem;
+                padding: 2rem;
+                position: relative;
+            }
+
+            .box {
+                background: lightcoral;
+                padding: 2rem;
+                /* 과제: .box 객체를 원으로 만들어라 */
+                position: absolute; /* container의 값이 원점 */
+                border-radius: 50%;
+                /* 과제: 원을 중앙쯤에 배치하라. */
+                /* left: 5rem; top: 5rem; */
+                left: 35%; /* %로도 대충 가능*/ 
+                top: 33%;
+            } 
+
+            .box:active {  /* width, height (클릭시 증가량)*/
+                transform: scale(1, 2);
+            }
+        </style>
+    </head>
+    <body>
+        <div class='container'>
+            <div class='box'></div>
+        </div>
+    </body>
+</html>
+
+<!--           1.         2.     3.
+    ● transform: translate, scale, rotate
+    1. translate = 위치이동
+    2. scale = 크기증가
+    3. rotate = 돌려버리기
+
+    ※perspective = 3차원 - z축 지정하기위한 셋팅작업
+-->

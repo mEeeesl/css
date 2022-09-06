@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>box-shadow</title>
+        <style>
+            div {
+                border: .1rem solid;
+                width: 10rem;
+                height: 10rem;
+                margin: 2rem;
+                border-radius: 1rem;
+                float: left;
+            }
+
+            #one {      /* left top 농도 커지는정도 기본색*/
+                box-shadow: 1rem 1rem 0rem 0rem black;
+            }
+
+            #two {
+                box-shadow: 1rem 1rem .5rem 1rem gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='one'></div>
+        <div id='two'></div>
+    </body>
+</html>

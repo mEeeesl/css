@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>paragraph</title>
+        <style>
+            p {
+                border: .1rem solid;
+                border-color: grey;
+            }
+
+            .right { /* text-align = 정렬  */
+                text-align: right;
+            }
+
+            .center {
+                text-align: center;
+            }
+
+            .bigLine {  /* line-height 라인과 라인사이의 간격 / width 너비 height 높이 */
+                line-height: 2.5rem;
+            }
+
+            .overflow { /* width 값 조정 (border 크기를 고정시키기) */
+                width: 20rem;
+                white-space: nowrap; /* wrap이 안되고, border 크기 밖으로 글자가 나감, 그래서 가로 스크롤이 생김(모바일화면기준) 실행해봐야됨, wrap하면 안생김 */
+                /* white-space -> 스페이스바를 2개 3개를 연속으로 넣어도 1개만 보이게해줌*/
+                overflow: hidden; /* border 영역밖 글씨는 숨김*/
+            }
+        </style>
+    </head>
+    <body>
+        <p>하늘에서 내리던 비가 그쳤다. 하얀 구름 사이로 햇살이 비친다. 햇살이 지나간 자리에 무지개가 떠오른다.</p>
+        <p class='right'>하늘에서 내리던 비가 그쳤다. 하얀 구름 사이로 햇살이 비친다. 햇살이 지나간 자리에 무지개가 떠오른다.</p>
+        <p class='center'>하늘에서 내리던 비가 그쳤다. 하얀 구름 사이로 햇살이 비친다. 햇살이 지나간 자리에 무지개가 떠오른다.</p>
+        <p class='bigLine'>하늘에서 내리던 비가 그쳤다. 하얀 구름 사이로 햇살이 비친다. 햇살이 지나간 자리에 무지개가 떠오른다.</p>
+        <p class='overflow'>하      늘에서 내리던 비가 그쳤다. 하얀 구름 사이로 햇살이 비친다. 햇살이 지나간 자리에 무지개가 떠오른다.</p>
+    </body>
+</html>

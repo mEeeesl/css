@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>z-index</title>
+        <style>
+            div {
+                padding: 3rem;
+                margin: 1rem;
+                position: fixed; /*browser left top이 원점*/
+            }
+                /*z-index = 배치 순서*/
+            .one {
+                background: red;
+                left: 1rem;
+                top: 1rem;
+                z-index: 3;
+            }
+
+            .two {
+                background: green;
+                left: 2rem;
+                top: 2rem;
+                z-index: 1;
+            }
+
+            .three {
+                background: blue;
+                left: 3rem;
+                top: 3rem;
+                z-index: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='one'></div>
+        <div class='two'></div>
+        <div class='three'></div>
+    </body>
+</html>
+<!--
+    z-index = 배치 순서
+
+-->

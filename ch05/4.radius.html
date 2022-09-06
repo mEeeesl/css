@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>border-radius</title>
+        <style>
+            div {
+                border: .1rem solid;
+                width: 8rem;
+                height: 8rem;
+                margin: 1rem;
+                float: left;
+            }
+
+            #one { /* radius - 모서리 동글 */
+                border-radius: 1rem; /* 반지름 길이 */
+            }
+
+            #two {
+                border-radius: 50%; 
+                /* 
+                분모 = container(박스)의 width값 , height값
+                분자 = 내 모서리의 반지름길이
+                */
+            }
+
+            #three {
+                border-bottom-right-radius: 3rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div id='one'>M</div>
+        <div id='two'>50%</div>
+        <div id='three'>bottom right</div>
+    </body>
+</html>

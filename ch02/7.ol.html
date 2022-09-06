@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>ol</title>
+        <style>
+            .decimal-zero { /* 01. 02. 03. ~ */
+                list-style-type: decimal-leading-zero;
+            }
+
+            .lower-roman {  /* i. ii. iii. ~ */
+                list-style-type: lower-roman;
+            }
+
+            .upper-alpha {  /* A. B. C.   ~  */
+                list-style-type: upper-alpha;
+                list-style-position: inside; /* 들여쓰기 */
+            }
+        </style>
+    </head>
+    <body>
+        <ol>
+            <li>사과</li>
+            <li>딸기</li>
+        </ol>
+        <ol class='decimal-zero'>
+            <li>사과</li>
+            <li>딸기</li>
+        </ol>
+        <ol class='lower-roman'>
+            <li>사과</li>
+            <li>딸기</li>
+        </ol>
+        <!-- 과제: css 없이, 작은 로마숫자 아이템 번호를 붙여라. -->
+        <ol type='i'>
+            <li>사과</li>
+            <li>딸기</li>
+        </ol>
+        <ol class='upper-alpha'>
+            <li>사과</li>
+            <li>딸기</li>
+        </ol>
+    </body>
+</html>

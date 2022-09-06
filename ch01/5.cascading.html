@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>cascading</title>
+        <style>
+            /* 과제: table element에 글자 색: 파랑 style을 적용 */
+            table {    /* cascade 상속 느낌 */
+                color:blue;
+            }
+
+            td.kor {    /* Override 느낌 */
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>인사</caption>
+            <tr><td class='kor'>안녕</td><td>한국</td></tr>
+            <tr><td>Hello</td><td>미국</td></tr>
+        </table>
+    </body>
+</html>
+
+<!--
+    호출시,
+    
+    태그 이름을 사용
+    클래스 앞에는 '.' 을 사용
+    ID 앞에는 '#' 을 사용 ( #A, #B, #C)
+    
+-->

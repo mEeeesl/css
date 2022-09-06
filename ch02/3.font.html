@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>font</title>
+        <style>
+            .caps {
+                font-variant: small-caps;
+            }
+
+            .bold {
+                font-weight: bold;
+            }
+
+            .italic {
+                font-style: italic;
+            }
+
+            .caption { /* label에 쓰기 좋은 타입? */
+                font: caption;/* font만 쓰면 style, weight, variant 등 다 쓸수있 */
+            }
+
+            .small-caption {
+                font: small-caption;
+            }
+
+            .icon { /* icon에 쓰기 좋은 타입 */
+                font: icon;
+            }
+
+            .menu { /* 메뉴에 쓰기 좋은 타입 */
+                font: menu;
+            }
+
+            .message-box { /* 알림 메시지창에 쓰기좋은 크기 */
+                font: message-box;
+            }
+
+            .status-bar { /* 상태창(밑에 줄39:열42 공백:4 UTF-8 CRLF HTML 이거 창)에 쓰기 좋은 크기 */
+                font: status-bar;
+            }
+        </style>
+    </head>
+    <body>
+        <p class='caps'>Java is Good!</p>
+        <p class='bold'>자바가 좋아.</p>
+        <p class='italic'>자바가 좋아.</p>
+
+       <ul>
+            <li>I love You.</li>
+            <li class='caption'>caption</li>
+            <li class='small-caption'>small-caption</li>
+            <li class='icon'>icon</li>
+            <li class='menu'>menu</li>
+            <li class='message-box'>message-box</li>
+
+            <li class='status-bar'>status-bar</li>
+       </ul> 
+    </body>
+</html>
